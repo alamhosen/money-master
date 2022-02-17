@@ -28,7 +28,7 @@
                     <div class="row mb-3">
                         <label class="col-sm-3 col-form-label">Income:</label>
                         <div class="col-sm-6">
-                            <input class="form-control" type="text" value="2000">
+                            <input id="totalIncome" class="form-control" type="text" value="10000">
                         </div>
                       </div>
                     <!-- Expenses area  -->
@@ -36,24 +36,24 @@
                     <div class="row mb-3">
                         <label class="col-sm-3 col-form-label">Food:</label>
                         <div class="col-sm-6">
-                          <input class="form-control" type="text" value="3000">
+                          <input id="foodCost" class="form-control" type="text" value="3000">
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label class="col-sm-3 col-form-label">Rent:</label>
                         <div class="col-sm-6">
-                            <input class="form-control" type="text" value="2000">
+                            <input id="rentCost" class="form-control" type="text" value="2000">
                         </div>
                       </div>
                       <div class="row">
                         <label class="col-sm-3 col-form-label">Clothes:</label>
                         <div class="col-sm-6">
-                            <input class="form-control" type="text" value="500">
+                            <input id="clothesCost" class="form-control" type="text" value="500">
                         </div>
                       </div>
-                      <button type="button" class="btn btn-info mt-4 px-4 text-white fw-bold fs-5">Calculate</button>
-                      <h3 class="my-4">Total Expenses: 5500 </h3>
-                      <h3 class="">Balance: 4500</h3>
+                      <button id="calculateButton" type="button" class="btn btn-info mt-4 px-4 text-white fw-bold fs-5">Calculate</button>
+                      <h3 class="my-4">Total Expenses: <span id="totalExpenses">0</span></h3>
+                      <h3>Balance: <span id="balance">0</span></h3>
 
                       <!-- percentage calculator area  -->
                       <div class="row mt-4 d-flex align-items-center">
@@ -61,17 +61,17 @@
                             <label class="form-label fs-5">Save:</label>
                         </div>
                         <div class="col-lg-2 col-sm-12">
-                          <input type="text" class="form-control" value="20">
+                          <input id="savingPercent" type="text" class="form-control" value="20">
                         </div>
                         <div class="col-lg-1 col-sm-12">
                             <label class="form-label fs-5">%</label>
                         </div>
                         <div class="col-lg-7 col-sm-12">
-                            <button type="button" class="btn btn-info px-5 text-white fw-bold fs-5 ">Save</button>
+                            <button id="savingButton" type="button" class="btn btn-info px-5 text-white fw-bold fs-5 ">Save</button>
                         </div>
                       </div>
-                      <h3 class="my-4">Saving Amount: 2000 </h3>
-                      <h3>Remaining Balance: 2500 </h3>
+                      <h3 class="my-4">Saving Amount: <span id="savingArea">0</span></h3>
+                      <h3>Remaining Balance: <span id="remainingBalanceArea">0</span></h3>
                 </div>
                 
               </div>
